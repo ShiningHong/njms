@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- mybatis的oracle通用分页写法： -->
+<mapper namespace="common">
+    <sql id="Oracle_Pagination_Head">
+        <if test="pageFirst != null and pageLast != null">
+            <![CDATA[ select y.* from ( select z.*, rownum as oracleStart from ( ]]>
+        </if>
+    </sql>
+    <sql id="Oracle_Pagination_Tail">
+        <if test="pageFirst != null and pageLast != null">
+            <![CDATA[ ) z where rownum < #{pageLast}+1 ) y where y.oracleStart > #{pageFirst}-1 ]]>
+        </if>
+    </sql>    
+    
+    <!-- 分页头部 -->
+    <sql id="Pagination_Head">
+      <!-- oracle -->
+        <!-- 第一种方式-->
+        select * 
+		 from ( 
+		 select B.*, @rownum:=@rownum+1 as row_index from (select @rownum:=0) r,(
+		<!-- 第二种方式
+		 select B.*
+     	from (  -->
+     	<!-- 第三种方式
+     	SELECT * FROM ( 
+  			select B.*,rownum rn2 FROM (-->
+	  <!-- mysql -->
+		<!--   -->
+    </sql>
+    
+    <!-- 分页尾部  -->
+    <sql id="Pagination_Tail">
+      <!-- oracle -->
+        <!-- 第一种方式 -->
+         ) B
+		)C where row_index &gt;= ${pageFirst} and row_index &lt;=  ${pageLast} 
+		<!-- 第二种方式
+		  ) B where rn between  #{pageFirst} and #{pageLast} -->
+		<!-- 第三种方式
+			  ) B 
+		) where rn2 between #{pageFirst} and #{pageLast} -->
+      <!-- mysql -->
+		<!-- limit ${pageFirst},${rp} -->
+		
+    </sql>
+    
+    <!-- 按条件分页查询  -->
+    <sql id="selectByExamplePagination">
+    	<include refid="common.Pagination_Head"/>
+		  select <include refid="Base_Column_List" /> <!-- ,rownum rn -->
+		  from <include refid="Table_Name" /> 
+		  <include refid="Example_Where_Clause" /> 
+		  <if test="sortname != null and sortname != '' and sortorder != null and sortorder != ''">
+			order by ${sortname} ${sortorder}
+		  </if>
+		 <include refid="common.Pagination_Tail"/>
+    </sql>
+    
+    <!-- 按条件查询总数 -->
+    <sql id="countByExample">
+    	select count(1) from <include refid="Table_Name" /> 
+		<include refid="Example_Where_Clause"/>
+    </sql>
+    
+    <!-- 按条件查询 -->
+    <sql id="selectByExample">
+    	select
+		<include refid="Base_Column_List" />
+		from <include refid="Table_Name" />
+		<include refid="Example_Where_Clause" />		
+		<if test="sortname != null and sortname != '' and sortorder != null and sortorder != ''">
+			order by ${sortname} ${sortorder}
+		</if>
+    </sql>
+    
+    
+</mapper>

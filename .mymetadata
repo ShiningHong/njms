@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="njms"
+  id="myeclipse.1537235139411"
+  context-root="/njms"
+  j2ee-spec="6.0"
+  archive="njms.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,80 @@
+.icon-add,
+.opt-icon-add{
+	background:url('../images/optBtn/add.png') no-repeat;
+}
+.icon-edit,
+.opt-icon-edit{
+	background:url('../images/optBtn/edit.png') no-repeat;
+}
+.icon-cancel,
+.opt-icon-del{
+	background:url('../images/optBtn/del.png') no-repeat;
+}
+.opt-icon-look{
+	background:url('../images/optBtn/look.png') no-repeat;
+}
+.opt-icon-inactive{
+	background:url('../images/optBtn/inactive.png') no-repeat;
+}
+.opt-icon-delayInactive{
+	background:url('../images/optBtn/delayInactive.png') no-repeat;
+}
+
+
+.emergencyIcon{
+	margin-top:4px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url('../images/optBtn/emergency04.png') no-repeat;
+}
+.emergencyIcon01{
+	background:url('../images/optBtn/emergency01.png') no-repeat;
+}
+.emergencyIcon02{
+	background:url('../images/optBtn/emergency02.png') no-repeat;
+}
+.emergencyIcon03{
+	background:url('../images/optBtn/emergency03.png') no-repeat;
+}
+.emergencyIcon04{
+	background:url('../images/optBtn/inactive.png') no-repeat;
+}
+
+.colIcon{
+	display:inline-block;
+}
+
+.newIcon{
+	margin-left:2px;
+	margin-top:2px;
+	height:14px;
+	width:32px;
+	display:inline-block;
+	background:url('../images/optBtn/new.png') no-repeat;
+}
+.isReadIcon{
+	margin-left:2px;
+	margin-top:1px;
+	height:15px;
+	width:16px;
+	display:inline-block;
+	background:url('../images/optBtn/isRead.png') no-repeat;
+}
+.unReadIcon{
+	margin-left:2px;
+	margin-top:4px;
+	cursor:pointer;
+	height:12px;
+	width:16px;
+	display:inline-block;
+	background:url('../images/optBtn/unRead.png') no-repeat;
+}
+.hasFileIcon{
+	margin-left:0px;
+	margin-bottom:0px;
+	height:14px;
+	width:14px;
+	display:inline-block;
+	background:url('../images/optBtn/file.png') no-repeat;
+}

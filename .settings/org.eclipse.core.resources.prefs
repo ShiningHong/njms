@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF=UTF-8
+encoding//WebRoot/WEB-INF/jsp/course/course-add.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/course/course-index.jsp=UTF-8
+encoding//WebRoot/common/login_meta.jsp=UTF-8
+encoding//WebRoot/common/meta.jsp=UTF-8
+encoding//WebRoot/js=UTF-8
+encoding//WebRoot/js/login/login.js=UTF-8
+encoding//WebRoot/js/meta/jquery.js=UTF-8
+encoding//WebRoot/js/meta/validate.js=UTF-8
+encoding//WebRoot/plugin=UTF-8
+encoding//WebRoot/plugin/flexigrid/flexGridUtil.js=UTF-8
+encoding//src/com/controller/base/BaseController.java=UTF-8
+encoding//src/com/utils/ContextHolderUtils.java=UTF-8
+encoding//src/com/utils/WebUtils.java=UTF-8
+encoding/WebRoot=UTF-8
+encoding/src=UTF-8

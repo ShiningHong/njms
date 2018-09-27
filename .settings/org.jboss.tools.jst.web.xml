@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file-systems VERSION="2.0.0" application-name="njms"
+ model-entity="FileSystems" workspace-home="./WebRoot/WEB-INF">
+ <file-system NAME="WEB-INF" location="%workspace.home%" model-entity="FileSystemFolder"/>
+ <file-system NAME="WEB-ROOT" info="Content-Type=Web"
+  location="%workspace.home%/.." model-entity="FileSystemFolder"/>
+ <file-system NAME="src" location="%workspace.home%/../../src" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib" location="%workspace.home%/lib" model-entity="FileSystemFolder"/>
+ <file-system NAME="classes" location="%workspace.home%/classes" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-bean-validator.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\bean-validator.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.annotation.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.annotation.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.ejb.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.ejb.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.enterprise.deploy.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.enterprise.deploy.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.jms.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.jms.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.management.j2ee.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.management.j2ee.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.persistence.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.persistence.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.resource.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.resource.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.security.auth.message.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.security.auth.message.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.security.jacc.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.security.jacc.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.servlet.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.servlet.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.servlet.jsp.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.servlet.jsp.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.servlet.jsp.jstl.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.servlet.jsp.jstl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.transaction.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\javax.transaction.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaxb-api-osgi.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\jaxb-api-osgi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsf-api.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\jsf-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsf-impl.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\jsf-impl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsr311-api.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\jsr311-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jstl-impl.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\jstl-impl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mail.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\mail.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-webservices-api-osgi.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\webservices-api-osgi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-weld-osgi-bundle.jar"
+  location="E:\myeclipse 10.7\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.5.0.me201207171805\data\libraryset\EE_6\weld-osgi-bundle.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-com.springsource.org.aopalliance-1.0.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\com.springsource.org.aopalliance-1.0.0.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-com.springsource.org.apache.commons.logging-1.1.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\com.springsource.org.apache.commons.logging-1.1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-com.springsource.org.apache.log4j-1.2.15.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\com.springsource.org.apache.log4j-1.2.15.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-druid-1.0.15.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\druid-1.0.15.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-fastjson-1.2.7.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\fastjson-1.2.7.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-hamcrest-all-1.3.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\hamcrest-all-1.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-annotations-2.5.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jackson-annotations-2.5.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-2.5.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jackson-core-2.5.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-asl-1.9.8.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jackson-core-asl-1.9.8.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-databind-2.5.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jackson-databind-2.5.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-asl-1.9.8.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jackson-mapper-asl-1.9.8.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jstl-1.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jstl-1.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-junit-4.12.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\junit-4.12.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-3.1.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mybatis-3.1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-spring-1.2.3.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mybatis-spring-1.2.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mysql-connector-java-5.1.6-bin.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mysql-connector-java-5.1.6-bin.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-aop-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-aop-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-aspects-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-aspects-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-beans-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-beans-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-context-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-context-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-core-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-core-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-expression-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-expression-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-jdbc-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-jdbc-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-test-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-test-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-tx-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-tx-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-web-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-web-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-webmvc-3.2.16.RELEASE.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\spring-webmvc-3.2.16.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-api-2.6.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\log4j\log4j-api-2.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-core-2.6.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\log4j\log4j-core-2.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-slf4j-impl-2.6.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\log4j\log4j-slf4j-impl-2.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-web-2.6.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\log4j\log4j-web-2.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-slf4j-api-1.7.21.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\log4j\slf4j-api-1.7.21.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-lang3-3.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\commons-lang3-3.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="njms" location="%eclipse.project%" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-commons-beanutils-1.8.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\commons-beanutils-1.8.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-lang-2.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\commons-lang-2.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-poi-3.9.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\poi-3.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-poi-ooxml-3.9.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\poi-ooxml-3.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-poi-ooxml-schemas-3.9.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\poi-ooxml-schemas-3.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-poi-scratchpad-3.9.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\poi-scratchpad-3.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dom4j-1.6.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\dom4j-1.6.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-resources.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\resources.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jfr.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\jfr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-access-bridge-64.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dnsns.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaccess.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-localedata.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunec.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunjce_provider.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunmscapi.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-zipfs.jar"
+  location="E:\java\jdk1.7.0_80\jre\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-servlet-api.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\servlet-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-standard.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\base\standard.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dozer-5.5.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\utils\dozer-5.5.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-fastjson-1.2.39.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\utils\fastjson-1.2.39.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-1.84.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\utils\jackson-1.84.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsch-0.1.51.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\utils\jsch-0.1.51.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-velocity-1.7.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\utils\velocity-1.7.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-3.4.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mybatis\mybatis-3.4.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-generator-core-1.3.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mybatis\mybatis-generator-core-1.3.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-spring-1.3.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\mybatis\mybatis-spring-1.3.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aopalliance-1.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\aopalliance-1.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-asm-5.1-5.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\asm-5.1-5.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aspectjweaver-1.7.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\aspectjweaver-1.7.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-asrt.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\asrt.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-axis.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\axis.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-castor-core-1.3.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\castor-core-1.3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-castor-xml-1.3.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\castor-xml-1.3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-cglib-3.2.4-3.2.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\cglib-3.2.4-3.2.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-comframe20.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\comframe20.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-codec-1.9.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-codec-1.9.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-collections-3.2.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-collections-3.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-configuration-1.0-dev.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-configuration-1.0-dev.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-dbcp-1.2.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-dbcp-1.2.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-fileupload-1.3.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-fileupload-1.3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-httpclient-3.1.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-httpclient-3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-io-1.3.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-io-1.3.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-logging-1.1.3.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\commons-logging-1.1.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jdmkrt.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\jdmkrt.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jdom-1.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\jdom-1.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jpinyin-1.1.8.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\jpinyin-1.1.8.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-json-ezmorph-1.0.2.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\json-ezmorph-1.0.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsp-api.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\jsp-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jstl.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\jstl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ojdbc14-10.2.0.3.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\ojdbc14-10.2.0.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-xmlbeans-2.3.0.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\new\xmlbeans-2.3.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-asl-1.8.4.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jakson\jackson-mapper-asl-1.8.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-json-lib-2.3-jdk15.jar"
+  location="E:\workspace\njms\WebRoot\WEB-INF\lib\jakson\json-lib-2.3-jdk15.jar" model-entity="FileSystemJar"/>
+ <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
+  <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
+   model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>
+ </web>
+</file-systems>

@@ -1,0 +1,58 @@
+/**
+   portal.default CSS by fll update 2011.03.26
+*/
+body {
+	background: #fff;
+	color: #333;
+	font-family:verdana, arial;
+	text-align: left;
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px;	
+}
+
+.portlet {
+	padding:0px;
+	margin: 0px;
+	margin-bottom:0px;	
+	float:left;
+	width:49%;
+}
+
+
+.list-box{
+	padding:0px;
+	width:100%;
+	height:127px;
+	overflow-x:hidden;
+	filter:alpha(opacity=90);
+}
+
+.list-box ul li{
+	line-height:25px;
+	display:block;
+	white-space: nowrap;	
+	padding-left:12px;
+	border:0px;
+	width:95%;
+	background:url(images/default.gif) repeat-x 0px -249px;
+}
+
+.list-box ul li span{
+	overflow:hidden;	
+	padding:0px;
+	line-height:23px;
+}
+
+
+.line-1,.line-2{background:url(images/default.gif) no-repeat;}
+.line-1{background-position:0px -224px;}
+.line-2{background-position:0px -249px;}
+.portlet-header{height:23px;background:url(../../images/platform/title-bg.gif) repeat-x;border:1px solid #ccc;color:#006699;padding-top:2px;}
+.title-more span{float:left;width:16px;height:16px;}
+.portlet-header .title-text{float:left;width:auto;height:23px;overflow:hidden;font-size:14px;font-weight:normal;padding-top:2px;}
+.portlet-header .title-more{float:right;width:auto;height:23px;overflow:hidden;padding-top:2px;}
+.portlet-content{border:1px solid #ccc;border-top:0px;overflow:auto;padding:0px;background:#fff;}
+
+

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/***********告警页面****************/
+.alarm
+{ 
+	width:300px; 
+	margin-bottom:10px; 
+	margin:50px auto;
+}
+.alarm_top
+{
+	background-image:url(../images/alarm/waring_top_bg.gif);
+	height:23px;
+	background-repeat: repeat-x;
+}
+.alarm_top_left
+{
+	color: #FFFFFF;
+	padding-left:10px;
+	height:23;
+	line-height: 23px;
+}
+.alarm_top_right
+{
+	background-image:url(../images/alarm/alarm_windowsbg_top_right.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.alarm_content
+{
+	background-image: url(../images/alarm/alarm_windowsbg.gif);
+	background-repeat: repeat-y;
+	height:100%;
+
+}
+.alarm_bottom
+{
+	background-image: url(../images/alarm/waring_bottom_bg.gif);
+	background-repeat: no-repeat;
+	height:100%;
+}
+.alarm_content_left
+{
+	float: left;
+	width: 48px;
+	height:100%;
+	padding-left:2px;
+}
+.alarm_content_right
+{
+	float: right;
+	width: 228px;
+	padding-top:10px;
+	text-align: left;
+	word-break:break-all;
+	height:100%;
+}
+
+.alarm_code
+{
+	height:20px;
+}
+.alarm_title
+{
+	height:20px;
+}
+.alarm_message
+{
+	height:40px;
+}
+.alarm_detail
+{
+	display:none;
+	border-top:1px solid #dcdcdc;
+	height:120px;
+	overflow-y:auto;
+}
+.alarm_detail_btns
+{
+	float:right;
+	width:228px;
+}
+.alarm_detail_btn
+{
+	padding-right:4px;
+	float:right;
+}
+.alarm_detail_btn img
+{
+	cursor:pointer;
+}
