@@ -1,6 +1,6 @@
 package com.utils.sql;
 
-import java.lang.reflect.Field;
+
 
 
 import java.sql.Timestamp;
@@ -11,7 +11,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.beanutils.PropertyUtils;
 
 import com.utils.general.AIStringUtil;
 import com.utils.general.ArrayUtil;
@@ -195,141 +194,6 @@ public class SqlPropertyBuilder {
 		}
 	}
 	
-	/*
-	//根据DataContainer容器生成
-	protected static void hqlPropertyByDataContainer(StringBuffer hql,Map<String, Object> para,List<String> paramsList,String poNa,
-			DataContainer dataModel,Map<String,SqlPropertyModel> operCols) throws Exception{
-//		String orderBy = "";
-		
-		if(dataModel==null){//容器为空
-//			if(operCols!=null){//根据属性配置生成
-//				
-//				for(String key:operCols.keySet()){
-//					SqlPropertyModel oper = operCols.get(key);
-//					String propertyName = (oper!=null&&AIStringUtil.isNotEmpty(oper.getPropertyName()))?oper.getPropertyName():key;
-//					SqlOperType operType = oper!=null?oper.getOperType():null;
-//					if(SqlOperType.orderBy.equals(operType)){
-//						orderBy += ","+propertyName+" asc ";
-//						continue;
-//					}else if(SqlOperType.orderByDesc.equals(operType)){
-//						orderBy += ","+propertyName+" desc ";
-//						continue;
-//					}else{
-//						hqlProSingle(hql, para, paramsList, poNa, key, null, operType,null,null);
-//					}
-//				}
-//			}
-			
-		}else{
-			
-			DataContainer dataPro = new DataContainer(dataModel.getObjectType());
-			dataPro.copy(dataModel);
-			String[] propertys = dataPro.getPropertyNames();//取bean的属性
-			if(propertys==null||propertys.length<1){
-				return ;
-			}
-			for(String propertyName:propertys){
-				
-				String dataType = dataPro.getPropertyType(propertyName);//数据类型
-				Object value = dataPro.get(propertyName);//属性值
-				SqlPropertyModel oper =  (operCols!=null)?operCols.get(propertyName):null;
-				propertyName = (oper!=null&&AIStringUtil.isNotEmpty(oper.getPropertyName()))?oper.getPropertyName():propertyName;//重写属性名
-				String filterValue = (oper!=null&&AIStringUtil.isNotEmpty(oper.getFilterValue()))?oper.getFilterValue():null;//过滤值
-				SqlOperType operType = (oper!=null)?oper.getOperType():null;//逻辑运算
-				
-				/*
-				if(SqlOperType.orderBy.equals(operType)){
-					orderBy += ","+propertyName+" asc ";
-					continue;
-				}else if(SqlOperType.orderByDesc.equals(operType)){
-					orderBy += ","+propertyName+" desc ";
-					continue;
-				}else{
-					hqlProSingle(hql, para, paramsList, poNa,propertyName, value, operType,dataType,filterValue);
-				}
-				* /
-				if(!SqlOperType.isNull.equals(operType)&&!SqlOperType.isNotNull.equals(operType)){
-					hqlProSingle(hql, para, paramsList, poNa,propertyName, value, operType,dataType,filterValue);
-				}
-			}			
-		}
-		
-//		if(AIStringUtil.isNotEmpty(orderBy)){//有排序
-//			hql.append(" order by "+orderBy.substring(1));//去掉第一个,
-//		}
-		
-	}
-	*/
-	
-	/*
-    protected static void hqlPropertyBySearchModel(StringBuffer hql,Map<String, Object> para,List<String> paramsList,String poNa,
-    		Object dataModel,Map<String,SqlPropertyModel> operCols) throws Exception{
-    	
-//    	String orderBy = "";
-		
-		if(dataModel==null){//容器为空
-//			if(operCols!=null){//根据属性配置生成
-//				
-//				for(String key:operCols.keySet()){
-//					SqlPropertyModel oper = operCols.get(key);
-//					String propertyName = (oper!=null&&AIStringUtil.isNotEmpty(oper.getPropertyName()))?oper.getPropertyName():key;
-//					SqlOperType operType = oper!=null?oper.getOperType():null;
-//					if(SqlOperType.orderBy.equals(operType)){
-//						orderBy += ","+propertyName+" asc ";
-//						continue;
-//					}else if(SqlOperType.orderByDesc.equals(operType)){
-//						orderBy += ","+propertyName+" desc ";
-//						continue;
-//					}else{
-//						hqlProSingle(hql, para, paramsList, poNa, key, null, operType,null,null);
-//					}
-//				}
-//			}
-		}else{
-			
-			Field[] fields = dataModel.getClass().getDeclaredFields();//取装载对象的属性
-			for (Field field : fields) {
-				if (field.getAnnotation(SqlAttr.class) != null) {//属性添加了SqlAttr注解8
-					String name = field.getName();//model属性名
-					Object value = PropertyUtils.getSimpleProperty(dataModel,name);//属性值
-					SqlPropertyModel proper =  (operCols!=null)?operCols.get(name):null;
-					String column = (proper!=null&&AIStringUtil.isNotEmpty(proper.getPropertyName()))?proper.getPropertyName():null;//重写的数据字段名
-					if(AIStringUtil.isEmpty(column)){
-						column = field.getAnnotation(SqlAttr.class).column();//取model配置的数据字段名
-					}
-					if(AIStringUtil.isEmpty(column)) column = name;//属性未指定对应的字段名，则将属性名作为字段名
-					SqlOperType operType = (proper!=null)?proper.getOperType():null;//逻辑运算
-					if(operType==null){
-						operType = field.getAnnotation(SqlAttr.class).operType();//取model配置的逻辑运算
-					}
-					String dataType = field.getAnnotation(SqlAttr.class).dataType();//数据类型
-					String filterValue = (proper!=null&&AIStringUtil.isNotEmpty(proper.getFilterValue()))?proper.getFilterValue():null;//过滤值
-					
-					/*
-					if(SqlOperType.orderBy.equals(operType)){
-						orderBy += ","+propertyName+" asc ";
-						continue;
-					}else if(SqlOperType.orderByDesc.equals(operType)){
-						orderBy += ","+propertyName+" desc ";
-						continue;
-					}else{
-						hqlProSingle(hql, para, paramsList, poNa,column, value, operType,dataType,filterValue);
-					}* /
-					
-					if(!SqlOperType.isNull.equals(operType)&&!SqlOperType.isNotNull.equals(operType)){
-						hqlProSingle(hql, para, paramsList, poNa, column, value, operType,dataType,filterValue);
-					}
-					
-				}
-			}
-		}
-		
-//		if(AIStringUtil.isNotEmpty(orderBy)){//有排序
-//			hql.append(" order by "+orderBy.substring(1));//去掉第一个,
-//		}
-		
-    }
-    */
 	
     public static void hqlProperty(StringBuffer condition,Map<String, Object> para,List<String> paramsList,String poNa,
     		Object dataModel,Map<String,SqlPropertyModel> operCols,boolean isDataContainer) throws Exception{
@@ -387,46 +251,6 @@ public class SqlPropertyBuilder {
 
     }
     
-    
-    /*
-	public static Object[] hqlParamProperty(String poNa,DataContainer pro,Map<String,String> operCol){
-		StringBuffer hql = new StringBuffer("1=1");
-		Map<String, Object> para = new LinkedHashMap<String, Object>();
-		List<String> paramsList = new ArrayList<String>();
-		
-		if(pro==null){
-			//return null;
-			return new Object[]{hql.toString(),para,new String[]{},paramsList};
-		}
-		if(AIStringUtil.isEmpty(poNa)){
-			poNa = "";
-		}else{
-			poNa += ".";
-		}
-		if(operCol==null)operCol= new HashMap<String, String>();
-		
-		String[] propertys = pro.getPropertyNames();
-		if(propertys==null||propertys.length<1){
-			return new Object[]{hql.toString(),para,new String[]{},paramsList};
-		}
-		for(String proper:propertys){
-			if(pro.get(proper)==null){
-				continue;
-			}
-			String type = pro.getPropertyType(proper);
-			if(AIStringUtil.isEqualsIgnoreCase(type, "String")){
-				String vaule = String.valueOf(pro.get(proper));
-				if(AIStringUtil.isNotEmpty(vaule)){
-					
-				}
-				
-			}
-		}
-		
-		return new Object[]{hql.toString(),para,new String[]{},paramsList};
-		
-	}
-*/
 
 	public StringBuffer getCondition() {
 		return condition;

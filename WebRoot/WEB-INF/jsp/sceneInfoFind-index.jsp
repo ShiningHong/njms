@@ -6,7 +6,11 @@
 <head>
     <title></title>    
     <%@ include file="/common/meta.jsp" %>
+    
+    
     <script src="${webroot}/js/meta/validate.js" type="text/javascript"></script>
+    
+    
      <script src="${webroot}/js/sceneInfoFind-index.js" type="text/javascript"></script>
   </head>
   

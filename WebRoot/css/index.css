@@ -568,9 +568,9 @@ ul.list_li_sub li a{height: 30px;line-height: 30px;text-indent: 5px;}
 .login_logo{ padding:12px 0; height:46px;margin:0 auto;}
 .login_logo img{ width:500px; height:46px;}
 .login_mian{ position:relative;}
-.login_main_center{ position:absolute; width:100%; left:0; top:20%; text-align:center;}
+.login_main_center{ position:absolute; width:100%; left:0; top:7%; text-align:center;}
 .login_main_center_mid{ width:1000px; margin:0 auto;}
-.login_user{ width:400px; height:350px; float:right; background:#fff; border-radius:5px; border-bottom:3px solid #e3e4e8; position:relative;}
+.login_user{ width:400px; height:370px; float:right; background:#fff; border-radius:5px; border-bottom:3px solid #e3e4e8; position:relative;}
 .login_user h1{ font-size:24px; line-height:40px; height:40px; padding:10px 0; background:#ed5565; color:#f0f2f5; border-radius:5px; font-weight:normal;}
 .login_input_content{ padding:25px 30px;}
 .login_input{ position:relative; padding:0 0 0 50px; background:#fff; border-radius:5px; border:1px solid #e3e4e8; margin-bottom:15px;}

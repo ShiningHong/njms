@@ -6,8 +6,12 @@
     <%@ include file="/common/login_meta.jsp" %>
     <%@ include file="/common/meta.jsp" %>
     <link href="${webroot}/css/login.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="${webroot}/js/login/login.js"></script>
     <script type="text/javascript" src="${webroot}/plugin/jquery.cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="${webroot}/js/login/login.js"></script>
+    <!--引入验证码  -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="${webroot}/plugin/identify-code/jquery.idcode.css" />
+	<script type="text/javascript" src="${webroot}/plugin/identify-code/jquery.idcode.js"></script>
   </head>
   
   <body  class="login_bg">
@@ -36,9 +40,12 @@
                     <h1>用户登录</h1>
                     <div class="login_input_content">
                         <div class="login_input"><i><img src="${webroot}/images/work/login_user.png" width="30" height="30" alt=""/></i>
-                            <input style="background: rgb(255, 255, 255); color: rgb(221, 221, 221);" type="text" name="userLoginName" id="userName" type="text" title="登陆名" value="登陆名" autocomplete="off"/></div>
+                            <input style="background: rgb(255, 255, 255); color: rgb(221, 221, 221);" type="text" name="userLoginName" id="userName" type="text" title="登录名" value="登录名" autocomplete="off"/></div>
                         <div class="login_input"><i><img src="${webroot}/images/work/login_password.png" width="30" height="30" alt=""/></i>
                             <input type="password" name="userPwd" id="userPwd" type="password"  autocomplete="off"></div>
+  						<div><div class="login_input" style="padding: 0 0 0 10px;width:30%">
+                            <input maxlength="5" style="background: rgb(255, 255, 255); color: rgb(221, 221, 221);" class="txtVerification"; type="text" name="Txtidcode" id="Txtidcode" type="text" title="验证码" value="验证码" autocomplete="on"/></div>
+                            <span style="width:344px;height:54px;position:absolute;margin-left:-53px;margin-top:-53px" id="idcode">11</span></div>
                         <p><label><input type="checkbox" id="remeberPwsd" checked="checked" value="1" /><span>记住密码</span></label></p>
                         <div class="login_btn">
                             <div class="login_btn_left"><a href="javascript:void(0);"   id="loginBtn"><span>登录</span></a></div>
@@ -68,5 +75,8 @@
             </div>
         </div>
     </div>
+    <script>
+			$.idcode.setCode();
+	</script>
   </body>
 </html>
