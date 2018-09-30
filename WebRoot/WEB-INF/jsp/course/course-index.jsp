@@ -38,7 +38,7 @@
 	            <table cellpadding="50">
 	                   <tr>
 	                       <td>
-							   <div style="border:1px dashed #C0C0C0;">
+							   <div id='course' style="border:1px dashed #C0C0C0;">
                                    <img height="150px" width="170px" src="${webroot}/images/course_add.png" />
                                    <div style="background-color: #FFFAF4">
 	                                   <p class="test">课程名称</p>
@@ -47,7 +47,7 @@
                                 </div>
 						  </td>
 						  <td>
-						        <div style="border:1px dashed #C0C0C0;">
+						        <div id='course2' style="border:1px dashed #C0C0C0;">
 	                               <img height="150" width="170" src="${webroot}/images/course_add.png" />
 	                               <div style="background-color: #FFFAF4">
                                        <p class="test">课程名称</p>

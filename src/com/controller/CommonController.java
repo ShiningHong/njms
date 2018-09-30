@@ -1,19 +1,15 @@
 package com.controller;
 
 import java.io.IOException;
+
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.utils.codeModel.ExcelResultModel;
 import com.utils.flexigrid.FlexiGridJsonToFile;
 import com.utils.flexigrid.FlexiGridResult;
 import com.utils.general.AIStringUtil;
@@ -95,108 +91,4 @@ public class CommonController extends com.controller.base.BaseController {
 		}
 	}
 
-	@RequestMapping("/downLoadTempletFile")
-	public void downLoadTempletFile(HttpServletResponse response,
-			HttpServletRequest request, String fileName, String templetId) {
-
-	}
-
-	/**
-	 * 
-	 * 功能描述：返回公用导入结果错误页面
-	 * 
-	 * @param
-	 * @return
-	 */
-	public ModelAndView returnToExcelResultError(String errorMsg) {
-		ExcelResultModel rm = new ExcelResultModel();
-		rm.setMessage(errorMsg);
-		rm.setExportFile(false);
-		Map<String, Object> map = new HashMap<String, Object>();
-		map.put("excelResult", rm);
-		return this.pageView(rm.getReturnViewStr(), map);
-	}
-
-	/**
-	 * 
-	 * 功能描述：返回公用导入结果页面（同时提供错误信息下载）
-	 * 
-	 * @param rm
-	 * @return
-	 *//*
-	public ModelAndView returnToExcelResult(ExcelResultModel rm) {
-		if (rm == null)
-			rm = new ExcelResultModel();
-		Map<String, Object> map = new HashMap<String, Object>();
-		if (rm.getExcelErrorList() == null || rm.getFailNum() < 1
-				|| rm.getColmnuHeaders() == null) {
-			rm.setExportFile(false);
-		}
-		if (rm.isExportFile() && rm.getFailNum() > 0) {// 导出错误信息文件
-			try {
-				List excelErrorList = rm.getExcelErrorList();
-				List<String> colmnuHeaders = rm.getColmnuHeaders();
-				Map<String, String> colKeyMap = rm.getColKeyMap();
-				int tcols = 0;
-				if (colmnuHeaders != null) {
-					tcols = colmnuHeaders.size();
-				} else if (colKeyMap != null) {
-					tcols = colKeyMap.size();
-				}
-
-				String[] keys = null;
-				if (tcols > 0) {
-					keys = new String[tcols];
-					if (colKeyMap != null && colmnuHeaders != null) {
-						for (int i = 0; i < colmnuHeaders.size(); i++) {
-							keys[i] = colKeyMap.get(colmnuHeaders.get(i));
-						}
-					} else if (colKeyMap != null) {
-						keys = colKeyMap.keySet().toArray(new String[] {});
-					} else if (colmnuHeaders != null) {
-						keys = colmnuHeaders.toArray(new String[] {});
-					}
-				}
-
-				String sheetName = rm.getSheetName();
-				if (AIStringUtil.isEmpty(sheetName)) {
-					sheetName = rm.getFileName();
-				}
-				Workbook workBook = ExcelUtils.createWorkBook(sheetName,
-						excelErrorList, keys, colmnuHeaders);
-				ByteArrayOutputStream ot = new ByteArrayOutputStream();
-				workBook.write(ot);
-				ByteArrayInputStream in = new ByteArrayInputStream(
-						ot.toByteArray());
-				ot.flush();
-				ISysFileSV iSysFileSV = (ISysFileSV) ApplicationContextBeanFactory
-						.getBean("iSysFileSV");
-				ResultModel uploadRm = iSysFileSV.uploadFile(in, null,
-						rm.getFileName() + "."
-								+ ExcelUtils.FileType.XLS_FILE_TYPE, "",
-						UserCache.getUserId());
-
-				if (uploadRm.isSuccess() && uploadRm.getObj() != null) {
-					SysFile file = (SysFile) uploadRm.getObj();
-					// rm.setFileBatchId(file.getBatchId()+"");
-					rm.setFileBatchId(file.getFileUuid());
-				}
-				// map.put("import_fileBatchId", rm.getFileBatchId());
-			} catch (Exception e) {
-				// excelErrorList=null;
-				e.getStackTrace();
-				rm.setExportFile(false);
-			}
-
-		}
-
-		map.put("excelResult", rm);
-		
-		 * map.put("import_message", rm.getMessage()); map.put("import_failNum",
-		 * rm.getFailNum()); map.put("import_successNum", rm.getSuccessNum());
-		 * map.put("import_exportFile", rm.isExportFile());
-		 
-
-		return this.pageView(rm.getReturnViewStr(), map);
-	}*/
 }
