@@ -8,14 +8,14 @@
 }
 .ehong-idcode-val{
 	position:relative;
-	padding:1px 4px 1px 4px;
+	padding:14px 10px 14px 10px;
 	top:0px;
-	*top:-3px;
-	letter-spacing:4px;
+	letter-spacing:9px;
 	display:inline;
 	cursor:pointer;
-	font-size:16px;
+	font-size:18px;
 	font-family:"Courier New", Courier, monospace;
+	margin-left:-110px;
 	text-decoration:none;
 	font-weight:bold;
 }
@@ -45,11 +45,11 @@
 	background-color:#ACE1F1;
 }
 .ehong-code-val-tip{
-	font-size:12px;
+	font-size:15px;
 	color:#1098EC;
 	top:0px;
 	*top:-3px;	
 	position:relative;	
-	margin:0px 0px 0px 4px;
+	margin:0px 0px 0px 8px;
 	cursor:pointer;	
 }

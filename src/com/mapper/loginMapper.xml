@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+	<mapper namespace="com.dao.UserDao">
+	<!-- 映射结果集 -->
+  <resultMap id="BaseResultMap" type="com.bean.User" >
+           <result column="USERNAME" property="username" jdbcType="NUMERIC"  />
+           <result column="PASSWORD" property="password" jdbcType="VARCHAR"  />
+           <result column="ROLE" property="role" jdbcType="VARCHAR"  />
+  </resultMap>
+  <!-- 表名或者sql -->
+  <sql id="Table_Name">
+    TB_USER
+  </sql>
+  <!-- 表字段 -->
+  <sql id="Base_Column_List" >
+   USERNAME,PASSWORD,ROLE
+  </sql>
+  <!-- 按Model组装查询条件 -->
+<sql id="Example_Where_Clause">
+where 1=1
+    <trim  suffixOverrides="," >
+        <if test="username != null  and username != ''" >
+            and USERNAME =  #{username}
+        </if>
+         <if test="password != null  and password != ''" >
+            and PASSWORD =  #{password}
+        </if>
+         <if test="role != null  and role != ''" >
+            and ROLE =  #{role}
+        </if>
+    </trim>
+</sql>
+<!-- 按条件查询 -->
+<select id="selectByExample" resultMap="BaseResultMap" parameterType="com.utils.base.BaseSearchModel">
+        <include refid="common.selectByExample"/>
+</select>
+
+<!-- 按条件查询总数 -->
+<select id="countByExample" resultType="java.lang.Integer"  parameterType="com.utils.base.BaseSearchModel">
+    <include refid="common.countByExample"/>
+</select>
+
+<!-- 按条件分页查询  -->
+<select id="selectByExamplePagination" resultMap="BaseResultMap" parameterType="com.utils.base.BaseSearchModel">
+    <include refid="common.selectByExamplePagination"/>
+</select>            
+</mapper>
