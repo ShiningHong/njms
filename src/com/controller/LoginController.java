@@ -12,6 +12,7 @@ import com.bean.User;
 import com.model.UserModel;
 import com.service.ICategorySV;
 import com.service.IUserSV;
+import com.utils.WebUtils;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -66,6 +67,10 @@ public class LoginController extends CommonController {
 			return false;
 		//获取加密后的HD5字符串
 		boolean checkLogin=iUserSV.checkPsw(userPwd, users.get(0).getPassword());
+		//将登陆号和角色存到session中
+		if(true==checkLogin){
+			WebUtils.getSession().setAttribute("UserSession",users.get(0));
+		}
 		return checkLogin;
 	}
 }
