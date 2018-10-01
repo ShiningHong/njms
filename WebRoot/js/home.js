@@ -2,11 +2,21 @@ $(function(){
     var height_w = document.body.clientHeight-$('#headerDiv').height();
     var width_w = $('#menuDiv').width();
     var width_c = document.body.clientWidth-width_w;
-    $('body').layout('panel', 'south').panel('resize',{height:height_w});
+  
     $('body').layout('resize');
     
-    //初始化菜单
-    loadMenuTree();
+    var url = GLOBAL.WEBROOT + '/login.do?corseUI';
+    $.ajax({
+        url:url,
+        type:'post',
+        dataType:'html',
+        error: function(XMLHttpRequest,textStatus){
+            alert("error:"+XMLHttpRequest.status);
+        },
+        success:function(result){
+            $('#ablane').html(result);
+        }
+    });
 
 });
 

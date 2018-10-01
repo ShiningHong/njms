@@ -73,17 +73,17 @@ input{color:#DDD;}
 .login_logo{ padding:12px 0; height:46px;margin:0 auto;}
 .login_logo img{ width:500px; height:46px;}
 .login_mian{ position:relative;}
-.login_main_center{ position:absolute; width:100%; left:0; top:20%; text-align:center;}
+.login_main_center{ position:absolute; width:100%; left:0; top:9%; text-align:center;}
 .login_main_center_mid{ width:1000px; margin:0 auto;}
-.login_user{ width:400px; height:350px; float:right; background:#fff; border-radius:5px; border-bottom:3px solid #e3e4e8; position:relative;right:30px;}
-.login_user h1{ font-size:24px; line-height:40px; height:40px; padding:10px 0; background:#ed5565; color:#f0f2f5; border-radius:5px; font-weight:normal;}
+.login_user{ width:400px; height:399px; float:right; background:#fff; border-radius:5px; border-bottom:3px solid #e3e4e8; position:relative;right:30px;}
+.login_user h1{ font-size:24px; line-height:33px; height:33px; padding:10px 0; background:#ed5565; color:#f0f2f5; border-radius:5px; font-weight:normal;}
 .login_input_content{ padding:25px 30px;}
 .login_input{ position:relative; padding:0 0 0 50px; background:#fff; border-radius:5px; border:1px solid #e3e4e8; margin-bottom:15px;}
 .login_input input{ background:none; border:0; line-height:50px; height:50px; color:#333; font-size:16px; width:100%;}
 .login_input i{ position:absolute; left:10px; top:10px; display:block;}
 .login_input_content p{ text-align:left; line-height:20px; height:20px; font-size:14px; color:#a4a9ae; }
 .login_input_content p span{ padding-left:5px;}
-.login_btn{ margin:20px auto; width:300px; overflow:hidden;}
+.login_btn{ margin:10px auto; width:300px; overflow:hidden;}
 .login_btn_left{ width:120px; height:40px; line-height:40px; color:#fff; font-size:16px; text-align:center; background:#ed5565; border-bottom:3px solid #da4453; border-radius:5px; float:left;}
 .login_btn_left a{ display:block; margin:0 auto; text-align:center; border-radius:5px;}
 .login_btn_left a span{ padding:0 0 0 30px; background:url(../images/work/login_btn_icon1.png) left center no-repeat; display:inline-block; color:#fff;}

@@ -74,6 +74,7 @@ TAB.add = function(option){
 	//如存在则显示,否则新建页签
 	if($("#"+this.id).tabs('exists',title)){
 		TAB.select(title,refresh,url);
+		TAB.refresh(title,url);
 	}else{
 		//判断打开页签个数
 		var tabs = $("div.tabs-panels >div");

@@ -1397,7 +1397,7 @@ function cycleIframe(doc,id){
             var sunIframes = doc.getElementsByTagName("iframe");
             if(sunIframes.length > 0){
                 for(var i = 0;i < sunIframes.length ;i ++){
-                    var result_tem =  cycleIframe(sunIframes[i].contentWindow.document,id);
+                    var result_tem =cycleIframe(sunIframes[i].contentWindow.document,id);
                     if(result_tem){
                         return result_tem;
                     }
