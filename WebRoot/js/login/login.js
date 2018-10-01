@@ -116,7 +116,7 @@ doLogin = function(obj){
 	    data: data,
 	    success: function(data){
 	    	$(obj).find("span").html(loginTip);
-	    	if(data=true){
+	    	if(data==true){
 	    		var url = GLOBAL.WEBROOT+ "/login.do?loginIndex";
 	            window.top.location = url;
 	    	}
