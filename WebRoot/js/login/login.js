@@ -53,7 +53,7 @@ focusAndOutInput=function(){
 		            $("#Txtidcode").val("验证码");
 		        }
 		  });
-}
+};
 
 //重置form表单
 resetLoginForm = function(){

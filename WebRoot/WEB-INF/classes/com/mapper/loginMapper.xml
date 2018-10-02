@@ -43,5 +43,15 @@ where 1=1
 <!-- 按条件分页查询  -->
 <select id="selectByExamplePagination" resultMap="BaseResultMap" parameterType="com.utils.base.BaseSearchModel">
     <include refid="common.selectByExamplePagination"/>
-</select>            
+</select>       
+
+<!-- 查找用户姓名  -->
+<select id="selectNameByexample" resultType="java.lang.String" parameterType="com.utils.base.BaseSearchModel">
+ <if test="role =='学生'">
+     select b.STUDENTNAME NAME from <include refid="Table_Name"/>a,tb_Student b WHERE a.USERNAME=b.STUDENTNUM AND a.USERNAME=#{username}
+   </if>
+   <if test="role =='教师'">
+     select b.TEACHERNAME NAME from <include refid="Table_Name"/>a,tb_TEACHER b WHERE a.USERNAME=b.TEACHERNUM AND a.USERNAME=#{username}
+   </if>
+</select>   
 </mapper>

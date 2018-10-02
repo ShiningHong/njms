@@ -40,7 +40,7 @@
                     <h1>用户登录</h1>
                     <div class="login_input_content">
                         <div class="login_input"><i><img src="${webroot}/images/work/login_user.png" width="30" height="30" alt=""/></i>
-                            <input style="background: rgb(255, 255, 255); color: rgb(221, 221, 221);" type="text" name="userLoginName" id="userName" type="text" title="登录名" value="登录名" autocomplete="off"/></div>
+                            <input style="background: rgb(255, 255, 255); color: rgb(221, 221, 221);" type="text" name="userLoginName" id="userName" type="text" title="登录名" value="登录名" autocomplete="off"/ minChars="1"></div>
                         <div class="login_input"><i><img src="${webroot}/images/work/login_password.png" width="30" height="30" alt=""/></i>
                             <input type="password" name="userPwd" id="userPwd" type="password"  autocomplete="off"></div>
   						<div><div class="login_input" style="padding: 0 0 0 10px;width:30%">

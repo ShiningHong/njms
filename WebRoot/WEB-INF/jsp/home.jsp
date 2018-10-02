@@ -4,9 +4,6 @@
 <html style="overflow: hidden;">
 <head>
 <title>福建工程学院网络作业平台</title>
-<!--  -->
-<script type="text/javascript"
-	src="${webroot}/plugin/jquery/jquery-1.9.1.min.js"></script>
 
 <%@ include file="/common/meta.jsp"%>
 <link rel="stylesheet" type="text/css" href="${webroot}/css/index.css" />
@@ -20,8 +17,15 @@
 	<div id="paper-back">
 		<nav>
 		<div class="close"></div>
-		<a href="#">Home</a> <a href="#">About Us</a> <a href="#">Our Work</a>
-		<a href="#">Contact</a> </nav>
+		<c:if test="${sessionScope.UserSession.role=='教师'}" >
+			<a href="#">添加课程</a>
+			<a href="#">添加班级</a>
+		</c:if>
+		<c:if test="${sessionScope.UserSession.role=='学生'}" >
+			<a href="#">课程</a>
+			<a href="#">注册</a>
+		</c:if>
+		</nav>
 	</div>
 	<div id="paper-window">
 		<div id="paper-front">
@@ -45,7 +49,8 @@
 								src="${webroot}/images/work/head_icon2.png" width="24"
 								height="24" alt="" /> </a> </i>
 						<p>
-							<span>池文杉</span>，欢迎您！
+							<span style="width:100px;height:100px">${sessionScope.UserSession.name}
+							</span>,欢迎您！
 						</p>
 					</div>
 				</div>
@@ -127,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="${webroot}/plugin/jquery/jquery-1.11.0.min.js""></script>
 	<script>
 	  jQuery.noConflict();
       var paperMenu = {

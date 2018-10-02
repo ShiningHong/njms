@@ -110,7 +110,7 @@ TAB.getSelectFrame = function(){
 	var src = obj.children().attr("src");
 	var frameObj = {"name":name,"id":id,"src":src};
 	return frameObj;
-}
+};
 
 //根据title刷新页签
 TAB.refresh = function(title,url){				
@@ -126,12 +126,12 @@ TAB.refresh = function(title,url){
 		}
 		
 	}
-}
+};
 
 //根据title关闭页签
 TAB.close = function(title){
 	var tab = $("#"+this.id).tabs('close',title);
-}
+};
 
 //显示主页,取index=0的页签
 TAB.home = function(refresh){		
@@ -144,7 +144,7 @@ TAB.buttonClick = function(title,buttonId){
 	if(tab){
 	    tab.children().contents().find("#"+buttonId).click();
 	}
-}
+};
 
 //全局窗口
 var WIN = {
@@ -235,18 +235,17 @@ WIN.open = function(option){
 	
 	$("#globalModalFrm"+objId).attr({src:url});
 	//$('#globalModalWindow').window('open');
-}
+};
 
 WIN.close = function(id,param){
 	if(id==undefined){id = this.id;}
 	WIN.param = param;			
 	$("#globalModalFrm"+id).attr({src:"about:blank"});
 	$('#globalModalWindow'+id).window('close');
-}
-
+};
 WIN.modifyTitle = function(id,title){
 	$('#globalModalWindow'+id).panel({title:title});
-}
+};
 
 var ALARM = {
 	id:"#alarmWindow",
@@ -256,7 +255,7 @@ var ALARM = {
 
 ALARMInit = function(){
 	setInerval(this.show(),5000);
-}
+};
 
 ALARM.show = function(){	
 	$(this.id).window({closed: false});

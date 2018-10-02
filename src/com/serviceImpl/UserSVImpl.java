@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.bean.User;
 import com.dao.UserDao;
+import com.model.UserModel;
 import com.service.IUserSV;
 
 @Service("iUserSV")
@@ -49,6 +50,12 @@ public class UserSVImpl extends com.utils.base.QueryBaseServiceSVImpl<User>
 		else
 			return false;
 
+	}
+
+	@Override
+	public String selectNameByexample(UserModel model) {
+		// TODO Auto-generated method stub
+		return dao.selectNameByexample(model);
 	}
 
 }
