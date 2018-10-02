@@ -69,6 +69,10 @@ public class LoginController extends CommonController {
 		boolean checkLogin=iUserSV.checkPsw(userPwd, users.get(0).getPassword());
 		//将登陆号和角色存到session中
 		if(true==checkLogin){
+			//根据角色和ID号获取姓名
+			userModel.setRole(users.get(0).getRole());
+			String nameString=iUserSV.selectNameByexample(userModel);
+			users.get(0).setName(nameString);
 			WebUtils.getSession().setAttribute("UserSession",users.get(0));
 		}
 		return checkLogin;

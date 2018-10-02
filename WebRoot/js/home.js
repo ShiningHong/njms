@@ -5,6 +5,7 @@ $(function(){
   
     $('body').layout('resize');
     
+    //默认进入课程首页
     var url = GLOBAL.WEBROOT + '/login.do?corseUI';
     $.ajax({
         url:url,
@@ -29,26 +30,4 @@ function doLoginOut(){
         }
     });
 }
-
-function loadMenuTree(){
-    var url = GLOBAL.WEBROOT + '/login.do?loginLeftIndex';
-    $.ajax({
-        url:url,
-        type:'post',
-        dataType:'html',
-        error: function(XMLHttpRequest,textStatus){
-            alert("error:"+XMLHttpRequest.status);
-        },
-        success:function(result){
-            $('#lmenuDiv').html(result);
-            openMenuTab({title:'首页',url:'/login.do?corseUI','menuId':'3','scrollable':'no'});
-        }
-    });
-}
-
-//打开窗口
-function openMenuTab(option){
-    TAB.add(option);//添加右侧菜单
-}
-
 

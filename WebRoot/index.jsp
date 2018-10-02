@@ -2,7 +2,7 @@
 <%@ include file="/common/taglibs.jsp" %>
 <html>
   <head>
-    <title>福建联通综合服务支撑平台</title>
+    <title>福建工程学院网络作业平台</title>
 	<script type="text/javascript" src="${webroot}/js/globalUtil.js"></script>
   </head>
   <body>
