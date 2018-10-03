@@ -3,9 +3,9 @@
 <mapper namespace="com.dao.NoDoDao">
 	<!-- 映射结果集 -->
 	<resultMap id="BaseResultMap" type="com.bean.childBean.StuDoWorkInfo">
-		<result column="STUDENTNUM" property="studentNum" jdbcType="VARCHAR"/>
-		<result column="STUDENTNAME" property="studentName" jdbcType="VARCHAR"/>
-		<result column="CLASSID" property="classId" jdbcType="NUMERIC"/>
+		<result column="STUDENTNUM" property="studentnum" jdbcType="VARCHAR"/>
+		<result column="STUDENTNAME" property="studentname" jdbcType="VARCHAR"/>
+		<result column="CLASSID" property="classid" jdbcType="NUMERIC"/>
 		<result column="SUBMITSTATUS" property="submitstatus" jdbcType="VARCHAR"/>
 	</resultMap>
 	
@@ -25,13 +25,13 @@
 	where 1=1
     <trim  suffixOverrides="," >
     <if test="studentNum != null  and studentNum != ''" >
-            and STUDENTNUM =  #{studentNum}
+            and STUDENTNUM =  #{studentnum}
         </if>
         <if test="studentName != null  and studentName != ''" >
-            and STUDENTNAME =  #{studentName}
+            and STUDENTNAME =  #{studentname}
         </if>
          <if test="classId != null  and classId != ''" >
-            and CLASSID =  #{classId}
+            and CLASSID =  #{classid}
         </if>
          
         <if test="submitstatus != null  and submitstatus != ''" >

@@ -10,21 +10,10 @@ public class Student extends BaseEntity {
 	private String sex;//性别（男/女）
 	private String assistant;//是否为助教（是；否）
 	
-
-	private String teacherNum;//职工号
-	private String checkTask;//是否可以批改作业（是；否）
-	private String assignTask;//是否可以布置作业（是；否）
-	private String addTopic;//是否可以添加题目（是；否）
-	
-	public String getStudentNum() {
-		return studentNum;
-	}
-
 	private String teachernum;//职工号
 	private String checktask;//是否可以批改作业（是；否）
 	private String assigntask;//是否可以布置作业（是；否）
 	private String addtopic;//是否可以添加题目（是；否）
-
 	
 	public String getStudentnum() {
 		return studentnum;
@@ -80,6 +69,9 @@ public class Student extends BaseEntity {
 	public void setAddtopic(String addtopic) {
 		this.addtopic = addtopic;
 	}
+
+	
+
 
 	
 }
