@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.NoDoDao">
+	<!-- 映射结果集 -->
+	<resultMap id="BaseResultMap" type="com.bean.childBean.StuDoWorkInfo">
+		<result column="STUDENTNUM" property="studentNum" jdbcType="VARCHAR"/>
+		<result column="STUDENTNAME" property="studentName" jdbcType="VARCHAR"/>
+		<result column="CLASSID" property="classId" jdbcType="NUMERIC"/>
+		<result column="SUBMITSTATUS" property="submitstatus" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+  <!-- 表名或者sql -->
+  <sql id="Table_Name">
+    (select a.STUDENTNAME STUDENTNAME,a.CLASSID CLASSID,b.SUBMITSTATUS SUBMITSTATUS,b.STUDENTNUM STUDENTNUM
+		from tb_student a,tb_student_task b 
+		where a.CLASSID=1 and a.STUDENTNUM=b.STUDENTNUM and b.TASKID=1 and b.SUBMITSTATUS='未提交') c
+  </sql>
+  <!-- 表字段 -->
+  <sql id="Base_Column_List" >
+  STUDENTNUM,STUDENTNAME,CLASSID,SUBMITSTATUS
+  </sql>
+  
+   <!-- 按Model组装查询条件 -->
+	<sql id="Example_Where_Clause">
+	where 1=1
+    <trim  suffixOverrides="," >
+    <if test="studentNum != null  and studentNum != ''" >
+            and STUDENTNUM =  #{studentNum}
+        </if>
+        <if test="studentName != null  and studentName != ''" >
+            and STUDENTNAME =  #{studentName}
+        </if>
+         <if test="classId != null  and classId != ''" >
+            and CLASSID =  #{classId}
+        </if>
+         
+        <if test="submitstatus != null  and submitstatus != ''" >
+            and SUBMITSTATUS =  #{submitstatus}
+        </if>
+    </trim>
+	</sql>
+
+	<!-- 按条件查询 -->
+	<select id="selectByExample" resultMap="BaseResultMap"
+		parameterType="com.utils.base.BaseSearchModel">
+		<include refid="common.selectByExample" />
+	</select>
+
+	<!-- 按条件查询总数 -->
+	<select id="countByExample" resultType="java.lang.Integer"
+		parameterType="com.utils.base.BaseSearchModel">
+		<include refid="common.countByExample" />
+	</select>
+
+	<!-- 按条件分页查询 -->
+	<select id="selectByExamplePagination" resultMap="BaseResultMap"
+		parameterType="com.utils.base.BaseSearchModel">
+		<include refid="common.selectByExamplePagination" />
+	</select>
+	
+</mapper>
