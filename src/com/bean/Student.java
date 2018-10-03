@@ -4,34 +4,35 @@ import com.utils.base.BaseEntity;
 
 public class Student extends BaseEntity {
 
-	private String studentNum;//学号
-	private String studentName;//姓名
-	private int classId;//班级id
+	private String studentnum;//学号
+	private String studentname;//姓名
+	private int classid;//班级id
 	private String sex;//性别（男/女）
 	private String assistant;//是否为助教（是；否）
 	
-	private String teacherNum;//职工号
-	private String checkTask;//是否可以批改作业（是；否）
-	private String assignTask;//是否可以布置作业（是；否）
-	private String addTopic;//是否可以添加题目（是；否）
+	private String teachernum;//职工号
+	private String checktask;//是否可以批改作业（是；否）
+	private String assigntask;//是否可以布置作业（是；否）
+	private String addtopic;//是否可以添加题目（是；否）
 
-	public String getStudentNum() {
-		return studentNum;
+	
+	public String getStudentnum() {
+		return studentnum;
 	}
-	public void setStudentNum(String studentNum) {
-		this.studentNum = studentNum;
+	public void setStudentnum(String studentnum) {
+		this.studentnum = studentnum;
 	}
-	public String getStudentName() {
-		return studentName;
+	public String getStudentname() {
+		return studentname;
 	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setStudentname(String studentname) {
+		this.studentname = studentname;
 	}
-	public int getClassId() {
-		return classId;
+	public int getClassid() {
+		return classid;
 	}
-	public void setClassId(int classId) {
-		this.classId = classId;
+	public void setClassid(int classid) {
+		this.classid = classid;
 	}
 	public String getSex() {
 		return sex;
@@ -45,30 +46,30 @@ public class Student extends BaseEntity {
 	public void setAssistant(String assistant) {
 		this.assistant = assistant;
 	}
-	public String getTeacherNum() {
-		return teacherNum;
+	public String getTeachernum() {
+		return teachernum;
 	}
-	public void setTeacherNum(String teacherNum) {
-		this.teacherNum = teacherNum;
+	public void setTeachernum(String teachernum) {
+		this.teachernum = teachernum;
 	}
-	public String getCheckTask() {
-		return checkTask;
+	public String getChecktask() {
+		return checktask;
 	}
-	public void setCheckTask(String checkTask) {
-		this.checkTask = checkTask;
+	public void setChecktask(String checktask) {
+		this.checktask = checktask;
 	}
-	public String getAssignTask() {
-		return assignTask;
+	public String getAssigntask() {
+		return assigntask;
 	}
-	public void setAssignTask(String assignTask) {
-		this.assignTask = assignTask;
+	public void setAssigntask(String assigntask) {
+		this.assigntask = assigntask;
 	}
-	public String getAddTopic() {
-		return addTopic;
+	public String getAddtopic() {
+		return addtopic;
 	}
-	public void setAddTopic(String addTopic) {
-		this.addTopic = addTopic;
+	public void setAddtopic(String addtopic) {
+		this.addtopic = addtopic;
 	}
-	
+
 	
 }

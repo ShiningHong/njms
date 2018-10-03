@@ -6,59 +6,59 @@ import com.utils.base.BaseEntity;
 
 public class StudentTask extends BaseEntity {
 
-	private int studentTaskId;//学生个人作业表编号
-	private int taskId;//作业id
-	private String studentNum;//学号
-	private String submitStatus;//提交状态（已交，未交）
-	private String examineStatus;//审批状态（已审批，未审批）
-	private Date submitTime;//提交时间
+	private int studenttaskid;//学生个人作业表编号
+	private int taskid;//作业id
+	private String studentnum;//学号
+	private String submitstatus;//提交状态（已交，未交）
+	private String examinestatus;//审批状态（已审批，未审批）
+	private Date submittime;//提交时间
 	private double grade;//总成绩
 	private int count;//提交次数
 
-	private int taskDetailId;//作业详情编号
-	private String submitAnswer;//提交的答案
-	private String wordUrl;//实验报告文档本地地址
-	private String testUrl;//工程压缩包地址
+	private int taskdetailid;//作业详情编号
+	private String submitanswer;//提交的答案
+	private String wordurl;//实验报告文档本地地址
+	private String testurl;//工程压缩包地址
 	private double score;//该题得分
 	
-	private int examineId;//批改记录表编号
-	private String teacherNum;//教师职工号
-	private Date examineTime;//批改时间
-	public int getStudentTaskId() {
-		return studentTaskId;
+	private int examineid;//批改记录表编号
+	private String teachernum;//教师职工号
+	private Date examinetime;//批改时间
+	public int getStudenttaskid() {
+		return studenttaskid;
 	}
-	public void setStudentTaskId(int studentTaskId) {
-		this.studentTaskId = studentTaskId;
+	public void setStudenttaskid(int studenttaskid) {
+		this.studenttaskid = studenttaskid;
 	}
-	public int getTaskId() {
-		return taskId;
+	public int getTaskid() {
+		return taskid;
 	}
-	public void setTaskId(int taskId) {
-		this.taskId = taskId;
+	public void setTaskid(int taskid) {
+		this.taskid = taskid;
 	}
-	public String getStudentNum() {
-		return studentNum;
+	public String getStudentnum() {
+		return studentnum;
 	}
-	public void setStudentNum(String studentNum) {
-		this.studentNum = studentNum;
+	public void setStudentnum(String studentnum) {
+		this.studentnum = studentnum;
 	}
-	public String getSubmitStatus() {
-		return submitStatus;
+	public String getSubmitstatus() {
+		return submitstatus;
 	}
-	public void setSubmitStatus(String submitStatus) {
-		this.submitStatus = submitStatus;
+	public void setSubmitstatus(String submitstatus) {
+		this.submitstatus = submitstatus;
 	}
-	public String getExamineStatus() {
-		return examineStatus;
+	public String getExaminestatus() {
+		return examinestatus;
 	}
-	public void setExamineStatus(String examineStatus) {
-		this.examineStatus = examineStatus;
+	public void setExaminestatus(String examinestatus) {
+		this.examinestatus = examinestatus;
 	}
-	public Date getSubmitTime() {
-		return submitTime;
+	public Date getSubmittime() {
+		return submittime;
 	}
-	public void setSubmitTime(Date submitTime) {
-		this.submitTime = submitTime;
+	public void setSubmittime(Date submittime) {
+		this.submittime = submittime;
 	}
 	public double getGrade() {
 		return grade;
@@ -72,29 +72,29 @@ public class StudentTask extends BaseEntity {
 	public void setCount(int count) {
 		this.count = count;
 	}
-	public int getTaskDetailId() {
-		return taskDetailId;
+	public int getTaskdetailid() {
+		return taskdetailid;
 	}
-	public void setTaskDetailId(int taskDetailId) {
-		this.taskDetailId = taskDetailId;
+	public void setTaskdetailid(int taskdetailid) {
+		this.taskdetailid = taskdetailid;
 	}
-	public String getSubmitAnswer() {
-		return submitAnswer;
+	public String getSubmitanswer() {
+		return submitanswer;
 	}
-	public void setSubmitAnswer(String submitAnswer) {
-		this.submitAnswer = submitAnswer;
+	public void setSubmitanswer(String submitanswer) {
+		this.submitanswer = submitanswer;
 	}
-	public String getWordUrl() {
-		return wordUrl;
+	public String getWordurl() {
+		return wordurl;
 	}
-	public void setWordUrl(String wordUrl) {
-		this.wordUrl = wordUrl;
+	public void setWordurl(String wordurl) {
+		this.wordurl = wordurl;
 	}
-	public String getTestUrl() {
-		return testUrl;
+	public String getTesturl() {
+		return testurl;
 	}
-	public void setTestUrl(String testUrl) {
-		this.testUrl = testUrl;
+	public void setTesturl(String testurl) {
+		this.testurl = testurl;
 	}
 	public double getScore() {
 		return score;
@@ -102,26 +102,27 @@ public class StudentTask extends BaseEntity {
 	public void setScore(double score) {
 		this.score = score;
 	}
-	public int getExamineId() {
-		return examineId;
+	public int getExamineid() {
+		return examineid;
 	}
-	public void setExamineId(int examineId) {
-		this.examineId = examineId;
+	public void setExamineid(int examineid) {
+		this.examineid = examineid;
 	}
-	public String getTeacherNum() {
-		return teacherNum;
+	public String getTeachernum() {
+		return teachernum;
 	}
-	public void setTeacherNum(String teacherNum) {
-		this.teacherNum = teacherNum;
+	public void setTeachernum(String teachernum) {
+		this.teachernum = teachernum;
 	}
-	public Date getExamineTime() {
-		return examineTime;
+	public Date getExaminetime() {
+		return examinetime;
 	}
-	public void setExamineTime(Date examineTime) {
-		this.examineTime = examineTime;
+	public void setExaminetime(Date examinetime) {
+		this.examinetime = examinetime;
 	}
-
 	
-
+	
+	
+	
 }
 
