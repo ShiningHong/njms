@@ -6,267 +6,338 @@ import com.utils.base.BaseEntity;
 
 public class TeacherTask extends BaseEntity {
 
-	private int taskId;//作业id
-	private int taskJurisdictionId;//权限id
-	private int courseId;// 课程id
+	private int taskid;//作业id
+	private int taskjurisdictionid;//权限id
+	private int courseid;// 课程id
 	private String creator;//创建者（职工号）
-	private Date createTime; //创建时间
+	private Date createtime; //创建时间
 	private String title;//作业标题
 	private String standard;//评分机制（百分制；自定义）
-	private Date publishTime; //发布日期
-	private Date startTime;//作业开始日期
-	private Date endTime;//作业截止日期
-	private String taskType;//作业类型（课堂作业、课后作业、小测作业、实验）
-	private int passScore;//及格分数
-	private int totalScore;//总分
-	private String createStatus;//创建状态（创建完成，未创建完成）
+	private Date publishtime; //发布日期
+	private Date starttime;//作业开始日期
+	private Date endtime;//作业截止日期
+	private String tasktype;//作业类型（课堂作业、课后作业、小测作业、实验）
+	private int passscore;//及格分数
+	private int totalscore;//总分
+	private String createstatus;//创建状态（创建完成，未创建完成）
 	
-	private int publishId;//发布记录id
-	private int selectId;//选课id
-	private int submitNum;//已提交人数
-	private int examineNum;//已批改人数
+	private int publishid;//发布记录id
+	private int selectid;//选课id
+	private int submitnum;//已提交人数
+	private int examinenum;//已批改人数
 	
-	private int taskDetailId;//作业详情编号
-	private String topicType;//题目类型（课后作业、课堂、小测、实验）
-	private String topicContent;//题干
+	private int taskdetailid;//作业详情编号
+	private String topictype;//题目类型（课后作业、课堂、小测、实验）
+	private String topiccontent;//题干
 	private int options;//选项数目
-	private String optionA;//选项A（判断题-正确）
-	private String optionB;//选项B（判断题-错误）
-	private String optionC;//选项C
-	private String optionD;//选项D
-	private String optionE;//选项E
-	private String optionF;//选项F
+	private String optiona;//选项A（判断题-正确）
+	private String optionb;//选项B（判断题-错误）
+	private String optionc;//选项C
+	private String optiond;//选项D
+	private String optione;//选项E
+	private String optionf;//选项F
 	private String answer;//答案（除填空题答案存放在选项里面）
-	private String detailAnswer;//答案解析
+	private String detailanswer;//答案解析
 	private String complexity;//题目难易度（难中易）
 	private double score;//该题分数--作业对应
 
 	
-	private String lookAnswer;//是否可以查看答案（是，否）
-	private String lookGrade;//是否允许查看分数（是，否）
-	private String topicRound;//是否题目乱序（是，否）
+	private String lookanswer;//是否可以查看答案（是，否）
+	private String lookgrade;//是否允许查看分数（是，否）
+	private String topicround;//是否题目乱序（是，否）
 	
-	private int topicId;//题号
+	private int topicid;//题号
 
-	
-	public int getTopicId() {
-		return topicId;
+	public int getTaskid() {
+		return taskid;
 	}
-	public void setTopicId(int topicId) {
-		this.topicId = topicId;
+
+	public void setTaskid(int taskid) {
+		this.taskid = taskid;
 	}
-	
-	public int getCourseId() {
-		return courseId;
+
+	public int getTaskjurisdictionid() {
+		return taskjurisdictionid;
 	}
-	public void setCourseId(int courseId) {
-		this.courseId = courseId;
+
+	public void setTaskjurisdictionid(int taskjurisdictionid) {
+		this.taskjurisdictionid = taskjurisdictionid;
 	}
-	public int getTaskId() {
-		return taskId;
+
+	public int getCourseid() {
+		return courseid;
 	}
-	public void setTaskId(int taskId) {
-		this.taskId = taskId;
+
+	public void setCourseid(int courseid) {
+		this.courseid = courseid;
 	}
-	public int getTaskJurisdictionId() {
-		return taskJurisdictionId;
-	}
-	public void setTaskJurisdictionId(int taskJurisdictionId) {
-		this.taskJurisdictionId = taskJurisdictionId;
-	}
+
 	public String getCreator() {
 		return creator;
 	}
+
 	public void setCreator(String creator) {
 		this.creator = creator;
 	}
-	public Date getCreateTime() {
-		return createTime;
+
+	public Date getCreatetime() {
+		return createtime;
 	}
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+
+	public void setCreatetime(Date createtime) {
+		this.createtime = createtime;
 	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public String getStandard() {
 		return standard;
 	}
+
 	public void setStandard(String standard) {
 		this.standard = standard;
 	}
-	public Date getPublishTime() {
-		return publishTime;
+
+	public Date getPublishtime() {
+		return publishtime;
 	}
-	public void setPublishTime(Date publishTime) {
-		this.publishTime = publishTime;
+
+	public void setPublishtime(Date publishtime) {
+		this.publishtime = publishtime;
 	}
-	public Date getStartTime() {
-		return startTime;
+
+	public Date getStarttime() {
+		return starttime;
 	}
-	public void setStartTime(Date startTime) {
-		this.startTime = startTime;
+
+	public void setStarttime(Date starttime) {
+		this.starttime = starttime;
 	}
-	public Date getEndTime() {
-		return endTime;
+
+	public Date getEndtime() {
+		return endtime;
 	}
-	public void setEndTime(Date endTime) {
-		this.endTime = endTime;
+
+	public void setEndtime(Date endtime) {
+		this.endtime = endtime;
 	}
-	public String getTaskType() {
-		return taskType;
+
+	public String getTasktype() {
+		return tasktype;
 	}
-	public void setTaskType(String taskType) {
-		this.taskType = taskType;
+
+	public void setTasktype(String tasktype) {
+		this.tasktype = tasktype;
 	}
-	public int getPassScore() {
-		return passScore;
+
+	public int getPassscore() {
+		return passscore;
 	}
-	public void setPassScore(int passScore) {
-		this.passScore = passScore;
+
+	public void setPassscore(int passscore) {
+		this.passscore = passscore;
 	}
-	public int getTotalScore() {
-		return totalScore;
+
+	public int getTotalscore() {
+		return totalscore;
 	}
-	public void setTotalScore(int totalScore) {
-		this.totalScore = totalScore;
+
+	public void setTotalscore(int totalscore) {
+		this.totalscore = totalscore;
 	}
-	public String getCreateStatus() {
-		return createStatus;
+
+	public String getCreatestatus() {
+		return createstatus;
 	}
-	public void setCreateStatus(String createStatus) {
-		this.createStatus = createStatus;
+
+	public void setCreatestatus(String createstatus) {
+		this.createstatus = createstatus;
 	}
-	public int getPublishId() {
-		return publishId;
+
+	public int getPublishid() {
+		return publishid;
 	}
-	public void setPublishId(int publishId) {
-		this.publishId = publishId;
+
+	public void setPublishid(int publishid) {
+		this.publishid = publishid;
 	}
-	public int getSelectId() {
-		return selectId;
+
+	public int getSelectid() {
+		return selectid;
 	}
-	public void setSelectId(int selectId) {
-		this.selectId = selectId;
+
+	public void setSelectid(int selectid) {
+		this.selectid = selectid;
 	}
-	public int getSubmitNum() {
-		return submitNum;
+
+	public int getSubmitnum() {
+		return submitnum;
 	}
-	public void setSubmitNum(int submitNum) {
-		this.submitNum = submitNum;
+
+	public void setSubmitnum(int submitnum) {
+		this.submitnum = submitnum;
 	}
-	public int getExamineNum() {
-		return examineNum;
+
+	public int getExaminenum() {
+		return examinenum;
 	}
-	public void setExamineNum(int examineNum) {
-		this.examineNum = examineNum;
+
+	public void setExaminenum(int examinenum) {
+		this.examinenum = examinenum;
 	}
-	public int getTaskDetailId() {
-		return taskDetailId;
+
+	public int getTaskdetailid() {
+		return taskdetailid;
 	}
-	public void setTaskDetailId(int taskDetailId) {
-		this.taskDetailId = taskDetailId;
+
+	public void setTaskdetailid(int taskdetailid) {
+		this.taskdetailid = taskdetailid;
 	}
-	public String getTopicType() {
-		return topicType;
+
+	public String getTopictype() {
+		return topictype;
 	}
-	public void setTopicType(String topicType) {
-		this.topicType = topicType;
+
+	public void setTopictype(String topictype) {
+		this.topictype = topictype;
 	}
-	public String getTopicContent() {
-		return topicContent;
+
+	public String getTopiccontent() {
+		return topiccontent;
 	}
-	public void setTopicContent(String topicContent) {
-		this.topicContent = topicContent;
+
+	public void setTopiccontent(String topiccontent) {
+		this.topiccontent = topiccontent;
 	}
+
 	public int getOptions() {
 		return options;
 	}
+
 	public void setOptions(int options) {
 		this.options = options;
 	}
-	public String getOptionA() {
-		return optionA;
+
+	public String getOptiona() {
+		return optiona;
 	}
-	public void setOptionA(String optionA) {
-		this.optionA = optionA;
+
+	public void setOptiona(String optiona) {
+		this.optiona = optiona;
 	}
-	public String getOptionB() {
-		return optionB;
+
+	public String getOptionb() {
+		return optionb;
 	}
-	public void setOptionB(String optionB) {
-		this.optionB = optionB;
+
+	public void setOptionb(String optionb) {
+		this.optionb = optionb;
 	}
-	public String getOptionC() {
-		return optionC;
+
+	public String getOptionc() {
+		return optionc;
 	}
-	public void setOptionC(String optionC) {
-		this.optionC = optionC;
+
+	public void setOptionc(String optionc) {
+		this.optionc = optionc;
 	}
-	public String getOptionD() {
-		return optionD;
+
+	public String getOptiond() {
+		return optiond;
 	}
-	public void setOptionD(String optionD) {
-		this.optionD = optionD;
+
+	public void setOptiond(String optiond) {
+		this.optiond = optiond;
 	}
-	public String getOptionE() {
-		return optionE;
+
+	public String getOptione() {
+		return optione;
 	}
-	public void setOptionE(String optionE) {
-		this.optionE = optionE;
+
+	public void setOptione(String optione) {
+		this.optione = optione;
 	}
-	public String getOptionF() {
-		return optionF;
+
+	public String getOptionf() {
+		return optionf;
 	}
-	public void setOptionF(String optionF) {
-		this.optionF = optionF;
+
+	public void setOptionf(String optionf) {
+		this.optionf = optionf;
 	}
+
 	public String getAnswer() {
 		return answer;
 	}
+
 	public void setAnswer(String answer) {
 		this.answer = answer;
 	}
-	public String getDetailAnswer() {
-		return detailAnswer;
+
+	public String getDetailanswer() {
+		return detailanswer;
 	}
-	public void setDetailAnswer(String detailAnswer) {
-		this.detailAnswer = detailAnswer;
+
+	public void setDetailanswer(String detailanswer) {
+		this.detailanswer = detailanswer;
 	}
+
 	public String getComplexity() {
 		return complexity;
 	}
+
 	public void setComplexity(String complexity) {
 		this.complexity = complexity;
 	}
+
 	public double getScore() {
 		return score;
 	}
+
 	public void setScore(double score) {
 		this.score = score;
 	}
-	public String getLookAnswer() {
-		return lookAnswer;
-	}
-	public void setLookAnswer(String lookAnswer) {
-		this.lookAnswer = lookAnswer;
-	}
-	public String getLookGrade() {
-		return lookGrade;
-	}
-	public void setLookGrade(String lookGrade) {
-		this.lookGrade = lookGrade;
-	}
-	public String getTopicRound() {
-		return topicRound;
-	}
-	public void setTopicRound(String topicRound) {
-		this.topicRound = topicRound;
+
+	public String getLookanswer() {
+		return lookanswer;
 	}
 
+	public void setLookanswer(String lookanswer) {
+		this.lookanswer = lookanswer;
+	}
+
+	public String getLookgrade() {
+		return lookgrade;
+	}
+
+	public void setLookgrade(String lookgrade) {
+		this.lookgrade = lookgrade;
+	}
+
+	public String getTopicround() {
+		return topicround;
+	}
+
+	public void setTopicround(String topicround) {
+		this.topicround = topicround;
+	}
+
+	public int getTopicid() {
+		return topicid;
+	}
+
+	public void setTopicid(int topicid) {
+		this.topicid = topicid;
+	}
+
+	
+	
 
 	
 

@@ -4,27 +4,28 @@ import com.utils.base.BaseEntity;
 
 public class Class extends BaseEntity {
 
-	private int classId;//班级id
-	private String className;//班级名称
-	private int collegeId;//学院id
-	public int getClassId() {
-		return classId;
+	private int classid;//班级id
+	private String classname;//班级名称
+	private int collegeid;//学院id
+	public int getClassid() {
+		return classid;
 	}
-	public void setClassId(int classId) {
-		this.classId = classId;
+	public void setClassid(int classid) {
+		this.classid = classid;
 	}
-	public String getClassName() {
-		return className;
+	public String getClassname() {
+		return classname;
 	}
-	public void setClassName(String className) {
-		this.className = className;
+	public void setClassname(String classname) {
+		this.classname = classname;
 	}
-	public int getCollegeId() {
-		return collegeId;
+	public int getCollegeid() {
+		return collegeid;
 	}
-	public void setCollegeId(int collegeId) {
-		this.collegeId = collegeId;
+	public void setCollegeid(int collegeid) {
+		this.collegeid = collegeid;
 	}
+	
 	
 	
 
