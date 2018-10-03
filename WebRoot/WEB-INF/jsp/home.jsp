@@ -22,7 +22,7 @@
 			<a href="#">添加班级</a>
 		</c:if>
 		<c:if test="${sessionScope.UserSession.role=='学生'}" >
-			<a href="#">课程</a>
+			<a href="${webroot}/category.do?index">课程</a>
 			<a href="#">注册</a>
 		</c:if>
 		</nav>

@@ -5,6 +5,7 @@
   <resultMap id="BaseResultMap" type="com.bean.Category" >
            <result column="ID" property="id" jdbcType="NUMERIC"  />
            <result column="NAME" property="name" jdbcType="VARCHAR"  />
+           <result column="TIME" property="time" jdbcType="TIMESTAMP"  />
   </resultMap>
   <!-- 表名或者sql -->
   <sql id="Table_Name">
@@ -12,7 +13,7 @@
   </sql>
   <!-- 表字段 -->
   <sql id="Base_Column_List" >
-   ID,NAME
+   ID,NAME,TIME
   </sql>
   <!-- 按Model组装查询条件 -->
 <sql id="Example_Where_Clause">

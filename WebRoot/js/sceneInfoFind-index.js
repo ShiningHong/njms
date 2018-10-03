@@ -25,6 +25,10 @@ var colModels = [ {
     "name" : "NAME",
     "width" : 160
 },{
+    "display" : "时间",
+    "name" : "TIME",
+    "width" : 160
+},{
         name:"SET_UP",
         display:"设置",
         width : 200,
