@@ -4,25 +4,25 @@ import com.utils.base.BaseEntity;
 
 public class Course extends BaseEntity {
 
-	private int courseId;//课程id
-	private String courseName;//课程名称
+	private int courseid;//课程id
+	private String coursename;//课程名称
 	private String introduction;//课程简介
-	private String teacherNum;//职工号
-	private int selectId;//选课id
-	private int classId;//班级id
-	private int recordId;//选课记录表编号
-	private String studentNum;//学号
-	public int getCourseId() {
-		return courseId;
+	private String teachernum;//职工号
+	private int selectid;//选课id
+	private int classid;//班级id
+	private int recordid;//选课记录表编号
+	private String studentnum;//学号
+	public int getCourseid() {
+		return courseid;
 	}
-	public void setCourseId(int courseId) {
-		this.courseId = courseId;
+	public void setCourseid(int courseid) {
+		this.courseid = courseid;
 	}
-	public String getCourseName() {
-		return courseName;
+	public String getCoursename() {
+		return coursename;
 	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
+	public void setCoursename(String coursename) {
+		this.coursename = coursename;
 	}
 	public String getIntroduction() {
 		return introduction;
@@ -30,35 +30,35 @@ public class Course extends BaseEntity {
 	public void setIntroduction(String introduction) {
 		this.introduction = introduction;
 	}
-	public String getTeacherNum() {
-		return teacherNum;
+	public String getTeachernum() {
+		return teachernum;
 	}
-	public void setTeacherNum(String teacherNum) {
-		this.teacherNum = teacherNum;
+	public void setTeachernum(String teachernum) {
+		this.teachernum = teachernum;
 	}
-	public int getSelectId() {
-		return selectId;
+	public int getSelectid() {
+		return selectid;
 	}
-	public void setSelectId(int selectId) {
-		this.selectId = selectId;
+	public void setSelectid(int selectid) {
+		this.selectid = selectid;
 	}
-	public int getClassId() {
-		return classId;
+	public int getClassid() {
+		return classid;
 	}
-	public void setClassId(int classId) {
-		this.classId = classId;
+	public void setClassid(int classid) {
+		this.classid = classid;
 	}
-	public int getRecordId() {
-		return recordId;
+	public int getRecordid() {
+		return recordid;
 	}
-	public void setRecordId(int recordId) {
-		this.recordId = recordId;
+	public void setRecordid(int recordid) {
+		this.recordid = recordid;
 	}
-	public String getStudentNum() {
-		return studentNum;
+	public String getStudentnum() {
+		return studentnum;
 	}
-	public void setStudentNum(String studentNum) {
-		this.studentNum = studentNum;
+	public void setStudentnum(String studentnum) {
+		this.studentnum = studentnum;
 	}
 	
 	
