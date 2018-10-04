@@ -6,7 +6,7 @@
 </head>
 <body>
    <script language="javascript">
-      var url = "${webroot}/Corrections.do?index";
+      var url = "${webroot}/toplogin.do";
       window.top.location = url;
    </script>
 </body>
