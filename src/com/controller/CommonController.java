@@ -16,8 +16,8 @@ public class CommonController extends com.controller.base.BaseController {
 	// protected static final String view_path = formatPath("jsp\\");
 	@RequestMapping("/toplogin")
 	public String topLogin(HttpServletRequest request) {
-		// return "toplogin";
-		return "operateArrangement/operateArrangement-index";
+		 return "toplogin";
+		//return "operateArrangement/operateArrangement-index";
 	}
 	
 	// ///////////////////////////////////flexigrid相关方法///////////////////////////////////////////////
