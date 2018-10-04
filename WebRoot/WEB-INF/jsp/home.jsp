@@ -12,7 +12,12 @@
 <script type="text/javascript" src="${webroot}/js/index.js"></script>
 <script type="text/javascript" src="${webroot}/js/home.js"></script>
 </head>
-
+<style>
+	a:hover{
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:underline;}
+</style>
 <body class="easyui-layout" style="overflow: hidden;position':fixed,width:100%;">
 	<div id="paper-back">
 		<nav>

@@ -17,7 +17,7 @@ public class CommonController extends com.controller.base.BaseController {
 	@RequestMapping("/toplogin")
 	public String topLogin(HttpServletRequest request) {
 		// return "toplogin";
-		return "toplogin";
+		return "operateArrangement/operateArrangement-index";
 	}
 	
 	// ///////////////////////////////////flexigrid相关方法///////////////////////////////////////////////
